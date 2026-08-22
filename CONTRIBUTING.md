@@ -2,6 +2,61 @@
 
 This document covers how to branch, commit, and submit work in this repo — for both labs and the capstone.
 
+Getting Set Up (One-Time)
+
+Do this once, before Lab 1:
+
+1. Fork this repo (top right, "Fork" button) — this becomes your team's working copy. Only one person per team needs to do this; share the fork with your teammates afterward.
+
+2. Clone your fork to your laptop:
+
+```
+git clone git@github.com:<your-username>/donkey-racers.git
+```
+
+If you've never cloned a repo before, set up an SSH key first — GitHub's guide: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+3. Add the original repo as `upstream`, so you can pull new labs as they're released:
+
+```
+git remote add upstream https://github.com/zachajoseph/donkey-racers.git
+```
+
+---
+
+Workflow for Each Lab
+
+Repeat this every time a new lab is released:
+
+1. Pull the new lab content from upstream:
+
+```
+git checkout main
+git pull upstream main
+git push origin main
+```
+
+This brings the newly released lab folder into your fork's `main`.
+
+2. Create your lab branch:
+
+```
+git checkout -b lab<number>-<teamname>
+```
+
+3. Do the lab — follow the spec in the lab's folder, committing as you go (see Commit Messages below).
+
+4. Push your branch and open a PR into your own fork's `main`:
+
+```
+git push origin lab<number>-<teamname>
+```
+
+Open the PR on GitHub, targeting your fork's `main`, not the original repo.
+
+5. Wait for review — Zach or Parik will review and approve before merging.
+
+
 ---
 
 ## Branch Naming
