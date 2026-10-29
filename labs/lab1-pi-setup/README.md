@@ -55,7 +55,7 @@ Do this once, from one laptop.
  
 One person does this.
  
-4. Fork [`donkey-racers`](https://github.com/TODO/donkey-racers) on GitHub (**Fork** button, top right).
+4. Fork [`donkey-racers`](https://github.com/zachajoseph/donkey-racers) on GitHub (**Fork** button, top right).
 5. Add your teammates and both leads as collaborators (**Settings → Collaborators**).
 > Your fork is public. Never commit passwords, API keys, or SSH keys.
  
